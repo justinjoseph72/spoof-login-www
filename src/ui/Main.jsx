@@ -4,9 +4,9 @@ import UserDetailsInput from './UserDetailsInput.jsx';
 class Main extends React.Component {
   render(){
     return(
-      <div>
+      <div className="mainDiv">
         <HeaderInfo/>
-        <div align="center" className="userDetailsInputDiv">
+        <div className="userDetailsInputDiv">
           <UserDetailsInput/>
         </div>
 

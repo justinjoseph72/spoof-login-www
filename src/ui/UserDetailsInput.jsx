@@ -53,56 +53,53 @@ class UserDetailsInputTable extends React.Component{
   render(){
     return(
       <div>
-      <div className="form-group">
-        <table className="table table-hover">
-          <tbody>
-          <tr>
-            <td >
+      <div class="container">
+
+          <div class="row align-items-start">
+            <div class="col">
               Given Name
-            </td>
-            <td >
+            </div>
+            <div class="col">
               <input id ="givenName" className="form-control" value={this.state.givenName} onChange = {this.updateGivenName}/>
-            </td>
-          </tr>
-          <tr>
-            <td >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
               Family Name
-            </td>
-            <td >
+            </div>
+            <div class="col">
               <input id ="familyName" className="form-control" value={this.state.familyName} onChange = {this.updateFamilyName}/>
-            </td>
-          </tr>
-          <tr>
-            <td >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
               Email
-            </td>
-            <td >
+            </div>
+            <div class="col">
               <input id ="emailId" className="form-control" value={this.state.emailId} onChange = {this.updateEmailId}/>
-            </td>
-          </tr>
-          <tr>
-            <td >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
               Phone
-            </td>
-            <td >
+            </div>
+            <div class="col">
               <input id ="phoneNumber" className="form-control" value={this.state.phone} onChange = {this.updatePhone}/>
-            </td>
-          </tr>
-          <tr>
-            <td >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
               Remember Me Id
-            </td>
-            <td >
+            </div>
+            <div class="col">
               <input id ="rememberMeId" className="form-control" value={this.state.rememberMeId} onChange = {this.updateRememberMeId}/>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+            </div>
+          </div>
       </div>
       <div>
-        <button onClick={this.btnClicked.bind(this)}>Login</button>
+        <button class="btn btn-success btn-lg btn-block" onClick={this.btnClicked.bind(this)}>Login</button>
       </div>
-      </div>
+</div>
     );
   }
 }

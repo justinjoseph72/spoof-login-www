@@ -36,5 +36,29 @@
       width: 50%;
       border: 1px dashed;
       padding: 10px;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: #89b7e5;
+}
 
+.spoof-header {
+  //background-color: #427df4;
+  display: top;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #89b7e5;
+  border: 1px dashed;
+}
+
+.mainDiv {
+  //background-color: #79d622;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: 1px solid;
 }
