@@ -1,4 +1,6 @@
 import React from 'react';
+import {postDataFunc} from '../js/login.js';
+
 class UserDetailsInput extends React.Component{
   render(){
     return(
@@ -29,7 +31,7 @@ class UserDetailsInputTable extends React.Component{
 
   btnClicked() {
     var postDataStr = JSON.stringify(this.state);
-    alert("button clicked" + postDataStr);
+  postDataFunc(postDataStr);
   }
 
   updateGivenName(e){
