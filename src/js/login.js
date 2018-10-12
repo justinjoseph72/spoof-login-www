@@ -46,7 +46,7 @@ function createPostData(inputData){
       'phone_number': data.phone,
       'selfie': 'person.png'
     },
-    'rememberMeId': data.rememberMeId
+    'rememberMeId': data.emailId
   };
   return postData;
 }

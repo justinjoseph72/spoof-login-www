@@ -19,14 +19,12 @@ class UserDetailsInputTable extends React.Component{
       givenName: "",
       familyName: "",
       emailId: "",
-      phone: "",
-      rememberMeId: ""
+      phone: ""
     }
     this.updateGivenName = this.updateGivenName.bind(this);
     this.updateFamilyName = this.updateFamilyName.bind(this);
     this.updateEmailId = this.updateEmailId.bind(this);
     this.updatePhone = this.updatePhone.bind(this);
-    this.updateRememberMeId = this.updateRememberMeId.bind(this);
   }
 
   btnClicked() {
@@ -46,16 +44,13 @@ class UserDetailsInputTable extends React.Component{
   updatePhone(e){
     this.setState({phone: e.target.value});
   }
-  updateRememberMeId(e){
-    this.setState({rememberMeId: e.target.value});
-  }
 
   render(){
     return(
       <div>
       <div class="container">
 
-          <div class="row align-items-start">
+          <div class="row ">
             <div class="col">
               Given Name
             </div>
@@ -63,7 +58,7 @@ class UserDetailsInputTable extends React.Component{
               <input id ="givenName" className="form-control" value={this.state.givenName} onChange = {this.updateGivenName}/>
             </div>
           </div>
-          <div class="row">
+          <div class="row ">
             <div class="col">
               Family Name
             </div>
@@ -87,17 +82,9 @@ class UserDetailsInputTable extends React.Component{
               <input id ="phoneNumber" className="form-control" value={this.state.phone} onChange = {this.updatePhone}/>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              Remember Me Id
-            </div>
-            <div class="col">
-              <input id ="rememberMeId" className="form-control" value={this.state.rememberMeId} onChange = {this.updateRememberMeId}/>
-            </div>
-          </div>
       </div>
       <div>
-        <button class="btn btn-success btn-lg btn-block" onClick={this.btnClicked.bind(this)}>Login</button>
+        <button class="btn btn-primary" onClick={this.btnClicked.bind(this)}>Login</button>
       </div>
 </div>
     );

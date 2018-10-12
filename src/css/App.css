@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-image: url("../img/img1.jpg");
+
+    background-size: auto;
+  background-color: #008080;
+  align-content: flex-end;
+  border: 1px solid;
+  height: 100vh;
 }
 
 .App-logo {
@@ -33,32 +40,30 @@
 
 .userDetailsInputDiv {
   margin: auto;
-      width: 50%;
-      border: 1px dashed;
+      //border: 1px dashed;
       padding: 10px;
-      align-items: center;
-      justify-content: center;
-      color: white;
+      color: black;
       background-color: #89b7e5;
 }
 
 .spoof-header {
-  //background-color: #427df4;
-  display: top;
-  align-items: center;
-  justify-content: center;
+  background-color: #427df4;
   font-size: calc(10px + 2vmin);
-  color: #89b7e5;
-  border: 1px dashed;
+  height: 100%;
+  color: white;
+  display:none;
+//  border: 1px dashed;
 }
 
 .mainDiv {
-  //background-color: #79d622;
-  display: block;
-  display: flex;
-  flex-direction: column;
+  background-color: #008080;
   justify-content: center;
+  align-items: center;
+position: absolute;
+top: 30%;
+left:600px;
+width:800px;
   font-size: calc(10px + 2vmin);
   color: white;
-  border: 1px solid;
+  //border: 1px solid;
 }

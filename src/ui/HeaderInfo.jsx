@@ -2,7 +2,7 @@ import React from 'react';
 class HeaderInfo extends React.Component {
   render(){
     return(
-      <div className="spoof-header">
+      <div>
         <h2>Connection spoof login UI</h2>
       </div>
     );
