@@ -48,43 +48,43 @@ class UserDetailsInputTable extends React.Component{
   render(){
     return(
       <div>
-      <div class="container">
+      <div className="container">
 
-          <div class="row ">
-            <div class="col">
+          <div className="row ">
+            <div className="col">
               Given Name
             </div>
-            <div class="col">
+            <div className="col">
               <input id ="givenName" className="form-control" value={this.state.givenName} onChange = {this.updateGivenName}/>
             </div>
           </div>
-          <div class="row ">
-            <div class="col">
+          <div className="row ">
+            <div className="col">
               Family Name
             </div>
-            <div class="col">
+            <div className="col">
               <input id ="familyName" className="form-control" value={this.state.familyName} onChange = {this.updateFamilyName}/>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div className="row">
+            <div className="col">
               Email
             </div>
-            <div class="col">
+            <div className="col">
               <input id ="emailId" className="form-control" value={this.state.emailId} onChange = {this.updateEmailId}/>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div className="row">
+            <div className="col">
               Phone
             </div>
-            <div class="col">
+            <div className="col">
               <input id ="phoneNumber" className="form-control" value={this.state.phone} onChange = {this.updatePhone}/>
             </div>
           </div>
       </div>
       <div>
-        <button class="btn btn-primary" onClick={this.btnClicked.bind(this)}>Login</button>
+        <button className="btn btn-primary" onClick={this.btnClicked.bind(this)}>Login</button>
       </div>
 </div>
     );
