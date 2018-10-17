@@ -2,8 +2,11 @@ import React from 'react';
 import { getLoggedInPeople } from '../js/people.js';
 class UserListDisplay extends React.Component{
   state = { 'data':[]};
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
+    this.state ={
+      data: []
+    };
     this.getPeople = this.getPeople.bind(this);
   }
 
@@ -11,9 +14,11 @@ class UserListDisplay extends React.Component{
 
 var item = getLoggedInPeople().then(function(peopleData){
   console.log('people item ',peopleData);
+  //this.state = peopleData;
   return peopleData;
 });
 console.log('item final ',item);
+this.setState({data: item});
 
 }
 
