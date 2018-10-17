@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {getLoggedInPeople} from '../js/people.js';
 import UserDetail from './UserDetail.jsx';
 class UserListDisplay extends React.Component {
@@ -14,7 +13,6 @@ class UserListDisplay extends React.Component {
   }
 
   componentDidMount() {
-    console.log('component did mount');
     var item = getLoggedInPeople().then((peopleData) => {
       this.setState({
         data: peopleData

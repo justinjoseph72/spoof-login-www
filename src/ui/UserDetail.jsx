@@ -1,4 +1,5 @@
 import React from 'react';
+import {postDataFunc} from '../js/login.js';
 
 class UserDetail extends React.Component {
   constructor(props) {
@@ -8,6 +9,15 @@ class UserDetail extends React.Component {
 
   loginPerson() {
     console.log('div clicked');
+    var postData ={
+      'familyName': this.props.person.family_name,
+      'givenName': this.props.person.given_name,
+      'emailId': this.props.person.email,
+      'phone': this.props.person.phone_number
+    }
+    console.log('post data',postData);
+    var postDataStr = JSON.stringify(postData);
+    postDataFunc(postDataStr);
   }
 
   render() {
