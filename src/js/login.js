@@ -16,7 +16,6 @@ var postData = createPostData(data);
   //  doLoginToConnection();
   })
   .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
     doLoginToConnection();
   });
 }
@@ -30,7 +29,6 @@ function doLoginToConnection(){
   .then(function(response){ return response.json(); })
   .then(function(item){
     var loginUrl = item.loginUrl;
-    console.log('the login url is ' + loginUrl);
     window.open(loginUrl,'_blank');
   });
 

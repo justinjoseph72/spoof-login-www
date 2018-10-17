@@ -9,7 +9,6 @@ const fetch_people_api = 'http://localhost:8080/api/v1/people';
       }
     }).then(function(response) {
       var data = response.json();
-      console.log('completed the fetch',data);
       resolve(data);
     });
   });
@@ -18,7 +17,6 @@ const fetch_people_api = 'http://localhost:8080/api/v1/people';
 export function getLoggedInPeople() {
   return new Promise(function(resolve,reject){
     fetchLoggedInPeopleFromApi().then(function(data){
-      console.log('the data got is ',data);
       var item ={
         'people' :[]
       };
@@ -31,7 +29,6 @@ export function getLoggedInPeople() {
           "phone_number": person.phone
         });
       }
-      console.log('from logged ',item);
       resolve(item);
     });
   });
