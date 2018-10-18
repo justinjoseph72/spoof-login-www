@@ -79,6 +79,14 @@ width:800px;
     opacity: 0.6;
 }
 
+.cardRow {
+  width: 30px
+}
+
+.cardCol {
+  width: 30px
+}
+
 .cardDiv:hover {opacity: 1;
 border: 2px solid blue;
 }

@@ -23,7 +23,7 @@ class UserDetail extends React.Component {
   render() {
     return (<div className="cardDiv" onClick={this.loginPerson}>
       <div className="container">
-        <div className="row">
+        <div className="row cardRow">
           <div className="col">{this.props.person.given_name}</div>
           <div className="col">{this.props.person.family_name}</div>
           <div className="col">{this.props.person.email}</div>
