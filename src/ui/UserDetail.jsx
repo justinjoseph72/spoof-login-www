@@ -24,9 +24,10 @@ class UserDetail extends React.Component {
     return (<div className="cardDiv" onClick={this.loginPerson}>
       <div className="container">
         <div className="row cardRow">
-          <div className="col">{this.props.person.given_name}</div>
-          <div className="col">{this.props.person.family_name}</div>
-          <div className="col">{this.props.person.email}</div>
+          <div className="col cardCol"> <img src="../img/person.png" className=".img-cirlce" sytle="max-width:10px; max-height=2px "/></div>
+          <div className="col cardCol">{this.props.person.given_name}</div>
+          <div className="col cardCol">{this.props.person.family_name}</div>
+          <div className="col cardCol">{this.props.person.email}</div>
         </div>
       </div>
     </div>);
