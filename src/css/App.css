@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url("../img/img1.jpg");
+  background-image: url("../img/pexels.jpeg");
 
     background-size: auto;
   background-color: #008080;
@@ -80,13 +80,16 @@ width:800px;
 }
 
 .cardRow {
-  width: 30px
+  width: auto;
+  margin-bottom: 13px;
+  outline-color: invert;
 }
 
 .cardCol {
-  width: 30px
+  width: auto;
+  padding: 0px
 }
 
 .cardDiv:hover {opacity: 1;
-border: 2px solid blue;
+border: 2px dotted blue;
 }
